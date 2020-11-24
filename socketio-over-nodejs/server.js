@@ -3,13 +3,13 @@
 var fs = require('fs');
 
 // SSL 인증서 (임시)
-// var options = {
-//     key: fs.readFileSync('fake-keys/privatekey.pem'),
-//     cert: fs.readFileSync('fake-keys/certificate.pem')
-// };
+var options = {
+    key: fs.readFileSync('fake-keys/privatekey.pem'),
+    cert: fs.readFileSync('fake-keys/certificate.pem')
+};
 
 // HTTPs server
-var app = require('https').createServer(function(request, response) {
+var app = require('https').createServer(options, function(request, response) {
     response.writeHead(200, {
         'Content-Type': 'text/html'
     });
