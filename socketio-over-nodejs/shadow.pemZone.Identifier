@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2
+HostUrl=https://ap-northeast-2.console.aws.amazon.com/ec2/v2/downloadKeyPair
