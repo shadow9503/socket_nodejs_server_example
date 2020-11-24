@@ -3,9 +3,14 @@
 var fs = require('fs');
 
 // SSL 인증서 (임시)
+// var options = {
+//     key: fs.readFileSync('fake-keys/key/privatekey.pem'),
+//     cert: fs.readFileSync('fake-keys/certificate.pem')
+// };
+
 var options = {
-    key: fs.readFileSync('fake-keys/privatekey.pem'),
-    cert: fs.readFileSync('fake-keys/certificate.pem')
+    key: fs.readFileSync('fake-keys/key/private.key'),
+    cert: fs.readFileSync('fake-keys/key/private.crt')
 };
 
 // HTTPs server
